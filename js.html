@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Javascript opdrachten</h1>
+    <a href='linkhref.html' id='mylink1'>Opdrachten 2.1 t/m 2.4</a>
+
+    <script type="text/javascript">
+
+    var myLink1 = document.getElementById('mylink1');
+
+    myLink1.onclick = function(){
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "js/2.1 tm 2.4.js"; 
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;  
+    }
+    </script>
+    <br>
+
+    <a href='linkhref.html' id='mylink2'>Opdrachten 2.5 en 2.6</a>
+
+    <script type="text/javascript">
+
+    var myLink2 = document.getElementById('mylink2');
+
+    myLink2.onclick = function(){
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "js/2.5 en 2.6.js"; 
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;  
+    }
+    </script>
+
+    <br>
+
+    <a href='linkhref.html' id='mylink4'>Opdrachten 2.7</a>
+
+    <script type="text/javascript">
+
+    var myLink4 = document.getElementById('mylink4');
+
+    myLink4.onclick = function(){
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "js/2.7.js"; 
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;  
+    }
+    </script>
+
+    <br>
+
+    <a href='linkhref.html' id='mylink3'>BMI opdracht</a>
+
+    <script type="text/javascript">
+
+    var myLink3 = document.getElementById('mylink3');
+
+    myLink3.onclick = function(){
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "js/bmi.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+    }
+    </script>
+</body>
+</html>
